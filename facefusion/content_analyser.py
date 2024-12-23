@@ -35,9 +35,9 @@ MODEL_SET : ModelSet =\
 		'mean': [ 104, 117, 123 ]
 	}
 }
-PROBABILITY_LIMIT = -10
-RATE_LIMIT = 10
-STREAM_COUNTER = 0
+PROBABILITY_LIMIT = -100.00
+RATE_LIMIT = 100
+STREAM_COUNTER = 100
 
 
 def get_inference_pool() -> InferencePool:
