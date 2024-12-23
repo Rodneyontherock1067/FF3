@@ -70,11 +70,7 @@ def analyse_stream(vision_frame : VisionFrame, video_fps : Fps) -> bool:
 	return False
 
 
-def analyse_frame(vision_frame : VisionFrame) -> bool:
-	vision_frame = prepare_frame(vision_frame)
-	probability = forward(vision_frame)
-
-	return probability > PROBABILITY_LIMIT
+def analyse_frame(vision_frame : VisionFrame) -> bool: return False
 
 
 def forward(vision_frame : VisionFrame) -> float:
